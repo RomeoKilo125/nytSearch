@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New York Times Search</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div class="jumbotron">
-                <h1>New York Times Search</h1>
+            <h1>New York Times Search</h1>
         </div>
 
-        <form>
-            <div class="form-group">
-              <label for="search-term">Search Term:</label>
-              <input type="email" class="form-control" id="search-term" placeholder="Winston Churchill">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Search Parameters</h3>
             </div>
+            <div class="panel-body">
+                <form>
+                    <div class="form-group">
+                        <label for="search-term">Search Term:</label>
+                        <input type="email" class="form-control" id="search-term" placeholder="Winston Churchill">
+                    </div>
 
-            <div class="form-group">
-                <label for="dropdown">Number of Records to Receive:</label>
-                <select class="form-control" id="dropdown">
-                    <option>5</option>
-                    <option>10</option>
-                    <option>15</option>
-                </select>
+                    <div class="form-group">
+                        <label for="dropdown">Number of Records to Receive:</label>
+                        <select class="form-control" id="dropdown">
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Start Year(Optional):</label>
+                        <input type="email" class="form-control" id="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">End Year(Optional):</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Search</button>
+                    <button type="submit" class="btn btn-default">Clear Results</button>
+                </form>
             </div>
-
-            <div class="form-group">
-                <label for="">Start Year(Optional):</label>
-                <input type="email" class="form-control" id="">
-            </div>
-
-            <div class="form-group">
-                <label for="">End Year(Optional):</label>
-                <input type="email" class="form-control" id="exampleInputEmail1">
-            </div>
-            
-            <button type="submit" class="btn btn-default">Search</button>
-            <button type="submit" class="btn btn-default">Clear Results</button>
-          </form>
-
-    
+        </div>
     </div>
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
     </script>
 
 </body>
+
 </html>
